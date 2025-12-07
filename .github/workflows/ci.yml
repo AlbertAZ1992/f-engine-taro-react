@@ -23,7 +23,7 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint || echo "no lint script, skip"
+      - run: pnpm run lint
 
   test:
     runs-on: ${{ matrix.os }}
