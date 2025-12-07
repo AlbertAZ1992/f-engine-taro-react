@@ -1,10 +1,10 @@
-import alias from '@rollup/plugin-alias'
-import commonjs from '@rollup/plugin-commonjs'
-import resolve from '@rollup/plugin-node-resolve'
-import ts from '@rollup/plugin-typescript'
-import json from '@rollup/plugin-json'
-import externals from 'rollup-plugin-node-externals'
-import path from 'node:path'
+import alias from '@rollup/plugin-alias';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import ts from '@rollup/plugin-typescript';
+import json from '@rollup/plugin-json';
+import externals from 'rollup-plugin-node-externals';
+import path from 'node:path';
 
 const externalPackages = [
   'react',
@@ -14,15 +14,12 @@ const externalPackages = [
   '@tarojs/taro',
   '@tarojs/react',
   '@antv/f2',
-]
+];
 
-const projectRootDir = path.resolve(new URL('.', import.meta.url).pathname)
+const projectRootDir = path.resolve(new URL('.', import.meta.url).pathname);
 
 export default {
-  input: [
-    'src/index.ts',
-    'src/utils/index.ts',
-  ],
+  input: ['src/index.ts', 'src/utils/index.ts'],
   output: [
     {
       format: 'cjs',
@@ -39,7 +36,7 @@ export default {
       preserveModules: true,
       preserveModulesRoot: 'src',
       entryFileNames: '[name].esm.js',
-    }
+    },
   ],
   treeshake: false,
   plugins: [
@@ -66,4 +63,4 @@ export default {
     commonjs(),
     json(),
   ],
-}
+};

@@ -10,8 +10,5 @@ module.exports = {
     '\\.(css|scss|sass|less)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
-  transformIgnorePatterns: [
-    'node_modules/(?!(@tarojs|@antv)/)',
-  ],
-}
-
+  transformIgnorePatterns: ['node_modules/(?!(@tarojs|@antv)/)'],
+};

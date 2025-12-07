@@ -79,7 +79,7 @@ export default function FCanvasIndex({ id, children }: FCanvasIndexProps) {
   }
 
   const onCanvasReady = () => {
-    console.log('onCanvasReady')
+    console.log('onCanvasReady');
     Taro.createSelectorQuery()
       .select(`#${id}`)
       .fields({
@@ -121,11 +121,8 @@ export default function FCanvasIndex({ id, children }: FCanvasIndexProps) {
           }
         }
 
-        const {
-          createImage,
-          requestAnimationFrame,
-          cancelAnimationFrame,
-        } = node;
+        const { createImage, requestAnimationFrame, cancelAnimationFrame } =
+          node;
 
         // 根据环境获取 pixelRatio
         let pixelRatio = 1;
@@ -184,7 +181,11 @@ export default function FCanvasIndex({ id, children }: FCanvasIndexProps) {
     // 只在微信小程序环境下使用 offscreenCanvas
     if (isWeapp() && typeof Taro.createOffscreenCanvas === 'function') {
       try {
-        canvasConfig.offscreenCanvas = Taro.createOffscreenCanvas({ type: '2d', width, height });
+        canvasConfig.offscreenCanvas = Taro.createOffscreenCanvas({
+          type: '2d',
+          width,
+          height,
+        });
       } catch (error) {
         // 如果 createOffscreenCanvas 失败，忽略错误继续执行
         console.warn('createOffscreenCanvas failed:', error);
