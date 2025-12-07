@@ -21,7 +21,6 @@ package-lock.json
 /dist
 /generated
 /src/generated
-/example
 
 # misc
 .DS_Store
