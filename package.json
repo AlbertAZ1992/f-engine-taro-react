@@ -1,0 +1,79 @@
+{
+  "name": "f-engine-taro-react",
+  "version": "0.0.1-alpha.1",
+  "description": "FEngine for Taro. Supporting Taro v4 and F2 v5",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.esm.js"
+    },
+    "./engine": {
+      "types": "./dist/engine/index.d.ts",
+      "require": "./dist/engine/index.js",
+      "import": "./dist/engine/index.esm.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "require": "./dist/utils/index.js",
+      "import": "./dist/utils/index.esm.js"
+    }
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && rollup -c",
+    "clean": "rimraf ./dist",
+    "dev": "rollup -c -w"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@antv/f2": "^5.9.0",
+    "@tarojs/components": "^4.1.5",
+    "@tarojs/runtime": "^4.1.5",
+    "@tarojs/shared": "^4.1.5",
+    "@tarojs/taro": "^4.1.5",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@antv/f-engine": "^1.8.0"
+  },
+  "devDependencies": {
+    "@antv/f2": "^5.9.0",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@rollup/plugin-url": "^8.0.2",
+    "@tarojs/components": "^4.1.5",
+    "@tarojs/plugin-platform-h5": "^4.1.9",
+    "@tarojs/plugin-platform-weapp": "^4.1.9",
+    "@tarojs/runtime": "^4.1.5",
+    "@tarojs/shared": "^4.1.5",
+    "@tarojs/taro": "^4.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rimraf": "^5.0.0",
+    "rollup": "^3.29.5",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-node-externals": "^7.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.1",
+    "sass": "^1.90.0",
+    "typescript": "^5.7.3"
+  }
+}
