@@ -55,7 +55,7 @@
     "@tarojs/runtime": "4.1.5",
     "@tarojs/shared": "4.1.5",
     "@tarojs/taro": "4.1.5",
-    "f-engine-taro-react": "1.0.0-beta",
+    "f-engine-taro-react": "1.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
