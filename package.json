@@ -26,8 +26,29 @@
     "dist",
     "package.json"
   ],
+  "keywords": [
+    "taro",
+    "taro components",
+    "taro react",
+    "antv",
+    "f2",
+    "f-engine",
+    "f2 v5",
+    "chart",
+    "charts",
+    "mobile",
+    "visualization",
+    "react"
+  ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "https://github.com/AlbertAZ1992",
+  "homepage": "https://github.com/AlbertAZ1992/f-engine-taro-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlbertAZ1992/f-engine-taro-react"
   },
   "scripts": {
     "build": "rimraf ./dist && rollup -c",
