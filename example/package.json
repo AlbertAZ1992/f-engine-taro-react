@@ -37,8 +37,8 @@
   ],
   "author": "",
   "dependencies": {
-    "@antv/f2": "^5.14.0",
     "@antv/f-engine": "^1.8.0",
+    "@antv/f2": "^5.14.0",
     "@babel/runtime": "^7.24.4",
     "@tarojs/components": "4.1.5",
     "@tarojs/helper": "4.1.5",
@@ -55,9 +55,9 @@
     "@tarojs/runtime": "4.1.5",
     "@tarojs/shared": "4.1.5",
     "@tarojs/taro": "4.1.5",
+    "f-engine-taro-react": "file:..",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "f-engine-taro-react": "file:.."
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",

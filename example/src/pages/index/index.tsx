@@ -2,6 +2,7 @@ import { View, Text } from '@tarojs/components'
 import { useLoad, showToast } from '@tarojs/taro'
 import { Chart, Interval, Axis, Tooltip } from '@antv/f2'
 import FCanvasIndex from 'f-engine-taro-react'
+// import FCanvasIndex from './engine-box'
 
 import './index.scss'
 
