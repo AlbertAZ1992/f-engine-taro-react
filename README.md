@@ -12,6 +12,9 @@
   <a aria-label="Minified Gzip" href="https://bundlephobia.com/result?p=f-engine-taro-react">
     <img alt="Minified Gzip" src="https://img.shields.io/bundlephobia/minzip/f-engine-taro-react?color=F47983&style=for-the-badge">
   </a>
+  <a aria-label="Unpacked Size" href="https://www.npmjs.com/package/f-engine-taro-react?activeTab=code">
+    <img alt="Unpacked Size" src="https://img.shields.io/npm/unpacked-size/f-engine-taro-react?color=F47983&style=for-the-badge">
+  </a>
 </p>
 
 A React Canvas wrapper to use AntV F2 in Taro (Weapp/H5). It initializes Canvas and bridges click/touch events to F2.
