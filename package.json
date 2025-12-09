@@ -1,6 +1,6 @@
 {
   "name": "f-engine-taro-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "FEngine for Taro. Supporting Taro v4 and F2 v5",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -61,6 +61,9 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "changelogithub": {
+    "output": "CHANGELOG.md"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@antv/f2": "^5.9.0",
@@ -87,8 +90,6 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
     "@tarojs/components": "4.1.5",
-    "@tarojs/plugin-platform-h5": "^4.1.9",
-    "@tarojs/plugin-platform-weapp": "^4.1.9",
     "@tarojs/runtime": "4.1.5",
     "@tarojs/shared": "4.1.5",
     "@tarojs/taro": "^4.1.5",
