@@ -13,7 +13,7 @@
     <img alt="Minified Gzip" src="https://img.shields.io/bundlephobia/minzip/f-engine-taro-react?color=F47983&style=for-the-badge">
   </a>
   <a aria-label="Unpacked Size" href="https://www.npmjs.com/package/f-engine-taro-react?activeTab=code">
-    <img alt="Unpacked Size" src="https://img.shields.io/npm/unpacked-size/f-engine-taro-react?color=F47983&style=for-the-badge">
+    <img alt="Unpacked Size" src="https://img.shields.io/npm/unpacked-size/f-engine-taro-react?color=65c3f8&style=for-the-badge">
   </a>
 </p>
 
