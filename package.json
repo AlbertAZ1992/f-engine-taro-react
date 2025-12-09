@@ -1,6 +1,6 @@
 {
   "name": "f-engine-taro-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "FEngine for Taro. Supporting Taro v4 and F2 v5",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
